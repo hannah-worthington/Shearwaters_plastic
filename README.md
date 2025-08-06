@@ -26,6 +26,8 @@
   Working directory should automatically be recognised as the master folder
   
 # Usage
+  All results in the manuscript can be reproduced by running the code files detailed below
+  
   01_data_wrangling.R
     Reads in the encounter information
     Cleans data
@@ -43,14 +45,4 @@
     Produce model average results
     Bootstrap for standard errors
     Visualise model results
-
-
-  
-
-
-# Setup: 
-    extract SightOf.zip to some directory.
-    In Matlab, go to 'file>set path...>Add with Subfolders'
-    select the directory with the extracted SightOf contents
-    click 'Save'
-    click 'Close'
+    
