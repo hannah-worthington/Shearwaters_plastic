@@ -1,1 +1,56 @@
 # Shearwaters_plastic
+
+# System Requirements
+  R version 4.4.1 (2024-06-14 ucrt)
+  Matrix products: default
+
+  attached base packages:
+  [1] stats     graphics  grDevices utils     datasets  methods   base
+
+  loaded via a namespace (and not attached):
+  [1] compiler_4.4.1    tools_4.4.1       rstudioapi_0.16.0
+  
+  Additional packages called within the code files
+  
+# Code tested on
+  Platform: x86_64-w64-mingw32/x64
+  Running under: Windows 10 x64 (build 19045)
+  With the above R installation
+  
+  R package versions as tested can be loaded using command
+  renv::restore()
+
+# Setup
+  Copy/clone the repo to a local directory
+  Open Shearwaters.Rproj
+  Working directory should automatically be recognised as the master folder
+  
+# Usage
+  01_data_wrangling.R
+    Reads in the encounter information
+    Cleans data
+    Converts to a capture-recapture history 
+    Stores individual covariates
+  
+  02_visualise_data.R
+    Exploratory visualisations of the observed data
+    
+  03_exploratory_GLM_models.R
+    Fit, plot and obtain estimates from Binomial GLM models
+    
+  04_HMM_models.R
+    Fit capture-recapture models
+    Produce model average results
+    Bootstrap for standard errors
+    Visualise model results
+
+
+  
+
+
+# Setup: 
+    extract SightOf.zip to some directory.
+    In Matlab, go to 'file>set path...>Add with Subfolders'
+    select the directory with the extracted SightOf contents
+    click 'Save'
+    click 'Close'
