@@ -40,17 +40,20 @@ With the above R installation
 
 R package versions as tested can be loaded using command renv::restore()
 
-# Setup
+# Setup/Installation
 
-1.  Copy/clone the repo to a local directory
+1.  Install R - https://posit.co/download/rstudio-desktop/, and (recommended) R Studio (install time 5 minutes)
+2.  Copy/clone the repo to a local directory
 2.  Open Shearwaters.Rproj
 3.  Working directory should automatically be recognised as the master
     folder
 
 # Usage
 
-All results in the manuscript can be reproduced by running the code
-files detailed below
+All results in the manuscript can be reproduced by running the code provided.  
+Run time: minutes, bootstrap standard errors dependent on number of iterations (~ 1 hour)
+
+Details of code files below
 
 01_data_wrangling.R
 
