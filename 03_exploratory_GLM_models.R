@@ -128,7 +128,7 @@ ggplot(recap_data_trim) +
   geom_line(data = pred_mod_plastic_cohort,
             aes(x = x, y = predicted,
                 group = group),
-            size = 1.25) +
+            linewidth = 1.25) +
   geom_ribbon(data = pred_mod_plastic_cohort,
               aes(x = x, ymin = conf.low, ymax = conf.high,
                   fill = group),

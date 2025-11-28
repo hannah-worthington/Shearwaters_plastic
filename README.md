@@ -6,7 +6,9 @@ editor_options:
 
 # Shearwaters_plastic
 
-# System Requirements
+
+
+## System Requirements
 
 R version 4.4.1 (2024-06-14 ucrt)
 
@@ -30,17 +32,21 @@ loaded via a namespace (and not attached):
 
 Additional packages called within the code files
 
-# Code tested on
+
+
+## Code tested on
 
 Platform: x86_64-w64-mingw32/x64
 
-Running under: Windows 10 x64 (build 19045)
+Running under: Windows 11 Pro (OS Build 26200.7171)
 
 With the above R installation
 
 R package versions as tested can be loaded using command renv::restore()
 
-# Setup/Installation
+
+
+## Setup/Installation
 
 1.  Install R - https://posit.co/download/rstudio-desktop/, and (recommended) R Studio (install time 5 minutes)
 2.  Copy/clone the repo to a local directory
@@ -48,29 +54,30 @@ R package versions as tested can be loaded using command renv::restore()
 3.  Working directory should automatically be recognised as the master
     folder
 
-# Usage
+
+
+## Usage
 
 All results in the manuscript can be reproduced by running the code provided.  
-Run time: minutes, bootstrap standard errors dependent on number of iterations (~ 1 hour)
 
-Details of code files below
+Details of code files below.
 
-01_data_wrangling.R
+01_data_wrangling.R (Runtime: < 1 minute)
 
 -   Reads in the encounter information
 -   Cleans data
 -   Converts to a capture-recapture history format
 -   Stores individual covariates
 
-02_visualise_data.R
+02_visualise_data.R (Runtime: < 1 minute)
 
 -   Exploratory visualisations of the observed data
 
-03_exploratory_GLM_models.R
+03_exploratory_GLM_models.R (Runtime: < 1 minute)
 
 -   Fit, plot and obtain estimates from Binomial GLM models
 
-04_HMM_models.R
+04_HMM_models.R (Runtime: ~ 4 hours)
 
 -   Fit capture-recapture models
 -   Produce model average results

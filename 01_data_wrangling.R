@@ -2,7 +2,7 @@
 library(tidyverse)
 
 # read in data
-encounters_full <- read.csv('../Data/FFSH encounters 20241023.csv')
+encounters_full <- read.csv('./Data/FFSH encounters 20241023.csv')
 
 # trim data to those ringed 2010-2019 inclusive
 # remove the very large PlasMassTOT
@@ -51,3 +51,4 @@ cov_plastic <- recap_data_trim$PlasMassTOT
 cov_cohort <- as.numeric(recap_data_trim$year)
 n_cohorts <- length(unique(cov_cohort))
 cov_mass <- recap_data_trim$Mass
+cov_mass_norm <- (cov_mass - mean(cov_mass))/sd(cov_mass)

@@ -11,10 +11,11 @@
 #         covariate - individual covariate, default NULL
 #         covariate2 - individual covariate, default = NULL
 #         covariate3 - individual covariate, default = NULL
-#         stratify - covariate to startify bootstrap by
+#         stratify - covariate to stratify bootstrap by
+#         seed - random seed number
 # Outputs: list of bootstrap parameter estimates
 
-bootstrap_fn <- function(nboot, param, histories_i, model, n, occasions_i, covariate = NULL, covariate2 = NULL, covariate3 = NULL, stratify)  {
+bootstrap_fn <- function(nboot, param, histories_i, model, n, occasions_i, covariate = NULL, covariate2 = NULL, covariate3 = NULL, stratify, seed)  {
   
   # storage
   boot_intercept <- rep(0, nboot + 1)
@@ -46,6 +47,7 @@ bootstrap_fn <- function(nboot, param, histories_i, model, n, occasions_i, covar
   }
   
   # run bootstrap
+  set.seed(seed)
   for (b in 1:nboot)  {
     print(paste('bootstrap', b))
     

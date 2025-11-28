@@ -1,5 +1,8 @@
 ### Run 01_data wrangling first
 
+# load libraries
+library(ggpattern)
+
 # Figure 1 - plot annual ringing counts
 ggplot(recap_data_trim) +
   geom_bar(aes(x = year),
